@@ -1,0 +1,9 @@
+services:
+  dolphin-lite:
+    build: .
+    environment:
+      - DISPLAY=host.docker.internal:0
+      - QT_QPA_PLATFORM=xcb
+    network_mode: host
+    stdin_open: true
+    tty: true
